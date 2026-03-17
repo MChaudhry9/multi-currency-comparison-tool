@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/MChaudhry9/multi-currency-comparison-tool/blob/main/currencyApp.png">
+    <img src="currencyApp.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Global Currency Comparison Tool</h3>
