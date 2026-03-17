@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MChaudhry9/multi-currency-comparison-tool/blob/main/currencyApp.png">
-    <img src="currencyApp.png" alt="Logo" width="80" height="80">
+    <img src="currencyApp.png" alt="Logo"  width="100%">
   </a>
 
 <h3 align="center">Global Currency Comparison Tool</h3>
@@ -11,9 +11,13 @@
     This is a Python-based web application that serves as a tool to compare a product's price across multiple international currencies using real-time exchange rate data through an external API
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="#demo">View Demo</a>
   </p>
 </div>
+
+
+
+
 
 
 
@@ -38,8 +42,7 @@
         <li><a href="#running-the-app">Running the App</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -176,10 +179,11 @@ Make sure you have the following software installed:
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- DEMO EXAMPLES -->
+## Demo
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+https://github.com/user-attachments/assets/f349d7b5-bb09-43a5-addf-68cea2ea21f6
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
