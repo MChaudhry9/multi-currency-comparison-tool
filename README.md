@@ -23,6 +23,7 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+      <a href="#features">Features</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -32,6 +33,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#running-the-app">Running the App</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -54,6 +56,22 @@ This project aims to develop a Python-based web application that serves as a too
 This project is useful because exchange rates change frequently, and manually calculating conversions for multiple currencies can be time-consuming and inaccurate. Automating this tedious process provides end users with efficiency and accuracy.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- Features -->
+## Features
+
+- [ ] Enter product price with selected base currency
+- [ ] Fetch real-time exchange rates via API
+- [ ] Convert price into multiple currencies (USD, EUR, GBP, JPY, etc.)
+- [ ] Display results in a clear comparison table
+- [ ] Identify the lowest (best value) currency automatically
+- [ ] Fast and responsive UI with React + Vite
+    - [ ] Styled with Tailwind CSS and icons from Lucide
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -100,49 +118,57 @@ This project is useful because exchange rates change frequently, and manually ca
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps below.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Make sure you have the following software installed:
+
 * npm
   ```sh
   npm install npm@latest -g
   ```
+* Python (3.x)
+* pip (Python package manager)
 
 ### Installation
 
-1. Get a free API Key for getting real-time exchnag rate currency data at [https://www.exchangerate-api.com/](www.exchangerate-api.com)
+1. Get a free API key for real-time exchange rate data: [https://www.exchangerate-api.com/](www.exchangerate-api.com)
 2. Clone the repo
    ```sh
    git clone https://github.com/MChaudhry9/multi-currency-comparison-tool.git
    ```
-3. Install NPM packages
+3. Install frontend dependencies
    ```sh
    npm install
    ```
-4. Enter your API in `.env`
+4. Install backend dependencies
+   ```sh
+   npm install
+   ```
+5. Add your API key to a `.env` file
    ```env
    API_KEY = 'ENTER YOUR API';
    ```
-5. Change git remote url to avoid accidental pushes to base project
+6. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
-6. To run the project in localhost: 
-    Run 
-    ```sh 
-    python app.py
-    ```
-    in your terminal to start running the backend. After, run  
+
+### Running the App
+
+1. Start the backend (Flask)
+   ```sh
+   python app.py
+2. Start the frontend (React + Vite)
+  in your terminal to start running the backend. After, run  
     ```sh
     cd frontend
-    npm start dev 
+    npm run dev 
     ```
-    in your terminal to start running the frontend.
+3. Open your browser and visit:
+   `http://localhost:5173`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,49 +185,15 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Mamuna Chaudhry - [https://www.linkedin.com/in/mamuna-chaudhry/](https://www.linkedin.com/in/mamuna-chaudhry/) - mamunachaudhry9@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/MChaudhry9/multi-currency-comparison-tool](github.com/MChaudhry9/multi-currency-comparison-tool)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-[product-screenshot]: images/screenshot.png
-<!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
