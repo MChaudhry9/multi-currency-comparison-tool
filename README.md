@@ -142,9 +142,9 @@ Make sure you have the following software installed:
    ```sh
    npm install
    ```
-4. Install backend dependencies
+4.  Install backend dependencies  
    ```sh
-   npm install
+   pip install Flask requests python-dotenv flask-cors
    ```
 5. Add your API key to a `.env` file
    ```env
@@ -161,8 +161,8 @@ Make sure you have the following software installed:
 1. Start the backend (Flask)
    ```sh
    python app.py
-2. Start the frontend (React + Vite)
-  in your terminal to start running the backend. After, run  
+   ```
+2. Start the frontend (React + Vite) 
     ```sh
     cd frontend
     npm run dev 
