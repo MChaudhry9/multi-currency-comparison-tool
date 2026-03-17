@@ -3,10 +3,16 @@ import { ArrowRight, TrendingUp } from "lucide-react";
 
 // --- Currency metadata ---
 const currencyMeta = {
-  USD: { name: "US Dollar", symbol: "USD" },
-  EUR: { name: "Euro", symbol: "EUR" },
-  GBP: { name: "British Pound", symbol: "GBP" },
-  JPY: { name: "Japanese Yen", symbol: "JPY" },
+  USD: { name: "US Dollar", symbol: "$" },
+  EUR: { name: "Euro", symbol: "€" },
+  GBP: { name: "British Pound", symbol: "£" },
+  JPY: { name: "Japanese Yen", symbol: "¥" },
+  AUD: { name: "Australian Dollar", symbol: "A$" },
+  CAD: { name: "Canadian Dollar", symbol: "C$" },
+  CHF: { name: "Swiss Franc", symbol: "CHF" },
+  CNY: { name: "Chinese Yuan", symbol: "¥" },
+  INR: { name: "Indian Rupee", symbol: "₹" },
+  PKR: { name: "Pakistani Rupee", symbol: "₨" },
 };
 
 const currencies = Object.keys(currencyMeta);
@@ -20,7 +26,7 @@ const CurrencyCard = ({ currency, value, baseCurrency, basePrice, isLowest }) =>
     <div className="result-item">
       <div className="result-info">
         <div className="result-name">
-          {meta.name} ({meta.symbol}) {isLowest && "⭐ Best"}
+          {meta.name} ({meta.symbol}) {isLowest && "⭐ Best Price"}
         </div>
         <div className="result-rate">
           1 {baseCurrency} = {rate.toFixed(4)} {currency}
@@ -73,7 +79,7 @@ export default function App() {
   };
 
   // ---design---
-  const styles = `
+      const styles = `
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; background: linear-gradient(to bottom right, rgb(15,23,42), rgb(30,41,59)); min-height: 100vh; }
     .grid-bg { position: absolute; inset: 0; background-image:
@@ -101,7 +107,21 @@ export default function App() {
     input, select { padding:0.75rem 1rem; background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:0.5rem; color:white; font-size:1rem; transition: all 0.2s; font-family:inherit; }
     input::placeholder { color: rgb(148,163,184); }
     input:focus, select:focus { outline:none; border-color: rgb(96,165,250); box-shadow:0 0 0 2px rgba(96,165,250,0.2); }
-    select { appearance:none; cursor:pointer; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a1a5ab' d='M6 9L1 4h10z'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 0.75rem center; padding-right:2.5rem; }
+    select {
+      appearance: none;
+      cursor: pointer;
+      background: rgba(30,41,59,0.9);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 0.5rem;
+      padding: 0.75rem 2.5rem 0.75rem 1rem;
+      color: white;
+      font-size: 1rem;
+      font-family: inherit;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a1a5ab' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+    }
+    option { background: rgba(15,23,42,1); color: white; }
     button { width:100%; padding:0.75rem 1.5rem; background: linear-gradient(to right, rgb(59,130,246), rgb(147,51,234)); color:white; font-weight:600; border:none; border-radius:0.5rem; cursor:pointer; transition: all 0.2s; display:flex; align-items:center; justify-content:center; gap:0.5rem; font-size:1rem; }
     button:hover { background: linear-gradient(to right, rgb(37,99,235), rgb(126,34,206)); transform: scale(1.05); }
     .results-section { margin-top:2.5rem; animation:fadeIn 0.5s ease-in; }
@@ -116,7 +136,8 @@ export default function App() {
     .result-currency { font-size:0.875rem; color: rgb(148,163,184); }
     .results-footer { padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.1); margin-top:2rem; }
     .disclaimer { font-size:0.75rem; color: rgb(148,163,184); text-align:center; }
-  `;
+    `;
+
 
   return (
     <div>

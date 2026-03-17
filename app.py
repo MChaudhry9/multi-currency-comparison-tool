@@ -21,7 +21,7 @@ def compare_prices():
     price=data["price"]
     base_currency=data["base_currency"]
 
-    currencies=["EUR", "GBP", "JPY"] #add more currencies here to increase variety
+    currencies=["USD","EUR","GBP","JPY","AUD","CAD","CHF","CNY","INR","PKR", ] #add more currencies here to increase variety
 
     url=f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{base_currency}"
 
